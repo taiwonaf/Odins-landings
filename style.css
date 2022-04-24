@@ -9,10 +9,6 @@ body {
     box-sizing: border-box;
 }
 
-img {
-    height: auto;
-    max-width: 200px;
-}
 
 :root {
     --dark-background: #1F2937;
@@ -33,11 +29,119 @@ img {
     --quote-text-color: #1F2937;
 }
 
+
+.navigation {
+    color: var(--logo-color);
+    font-size: var(--logo-text-size);
+    background-color: var(--dark-background);
+    display: flex;
+    justify-content: center;
+    padding: 10px 240px;
+    
+}
+
 .section {
+    display: flex;
+    justify-content: space-between;
     padding: 30px 240px;
 }
 
 .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    /* margin-right: auto; */
+}
+
+.nav-items ul {
     display: flex;
 }
 
+.nav-items ul li {
+    list-style: none;
+}
+
+.nav-items ul li a {
+    text-decoration: none;
+    color: var(--hero-main-text-color);
+    font: var(--hero-sec-text-size);
+    padding-right: 20px;
+}
+.hero-section {
+    background-color: var(--dark-background);
+}
+.hero {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 50%;
+
+}
+
+.header h1 {
+    color: var(--hero-main-text-color);
+    font-size: var(--hero-main-text-size);
+    font-weight: var(--hero-main-text-weight);
+    padding-bottom: 10px;
+}
+
+.hero-image {
+    max-width: 50%;
+
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+.sub-text {
+    font-size: var(--hero-sec-text-size);
+    color: var(--hero-sec-text-color);
+    padding-bottom: 20px;
+    padding-right: 89px;
+    font-weight: --hero;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: var(--hero-sec-text-size);
+    background-color: var(--button-color);
+    border: 0px;
+}
+
+.section-two {
+    flex-direction: column;
+}
+.section-two-items {
+    display: flex;
+    flex: 1;
+}
+
+.item {
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.quote {
+    background-color: var(--quote-sectio-bg);
+}
+.section-two-container {
+    padding: 100px 200px;
+    background-color: var(--quote-sectio-bg);
+    font-size: var(--quote-text-size);
+    color: var(--quote-text-color);
+    font-weight: var(--quote-text-weight);
+    font-style: italic;
+
+}
