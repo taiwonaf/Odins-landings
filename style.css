@@ -53,9 +53,6 @@ body {
     align-items: center;
 }
 
-.brand {
-    /* margin-right: auto; */
-}
 
 .nav-items ul {
     display: flex;
@@ -69,7 +66,7 @@ body {
     text-decoration: none;
     color: var(--hero-main-text-color);
     font: var(--hero-sec-text-size);
-    padding-right: 20px;
+    padding-left: 20px;
 }
 .hero-section {
     background-color: var(--dark-background);
@@ -115,22 +112,44 @@ button {
     font-size: var(--hero-sec-text-size);
     background-color: var(--button-color);
     border: 0px;
+    color: white;
 }
 
 .section-two {
     flex-direction: column;
+    padding: 30px 0px 200px 0px;
 }
 .section-two-items {
+    margin-top: 20px;
     display: flex;
-    flex: 1;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .item {
-    padding: 10px;
+    padding: 20px 10px 0px 10px ;
+    text-align: center;
 }
 
-img {
+.section-head h1 {
+    color: var(--dark-background);
+}
+
+.img-container {
+    height: 240px;
+    width: 340px;
+    border-radius: 10px;
+}
+
+.img-container img {
+    border-radius: 50px;
+    object-fit: contain;
     width: 100%;
+}
+
+.item p {
+    color: var(--quote-text-color);
+    font-size: 28px;
 }
 
 .quote {
@@ -144,4 +163,28 @@ img {
     font-weight: var(--quote-text-weight);
     font-style: italic;
 
+}
+
+.CTA {
+    color: var(--hero-sec-text-color);
+    font-size: var(--hero-sec-text-size);
+    background-color: var(--button-color);
+    padding: 100px 200px;
+    margin: 80px 0px;
+    border-radius: 20px;
+}
+
+.btn {
+    color: var(--logo-color);
+    border: 2px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--dark-background);
+    padding: 50px 0px;
+    color: var(--hero-sec-text-color);
+    font-size: 26px;
 }
